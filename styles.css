@@ -1,0 +1,233 @@
+* {
+    box-sizing:border-box;
+}
+
+html {
+    background-color: hsl(30, 38%, 92%);
+    height:100vh;
+}
+
+body {
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+main{
+    
+}
+
+/* ----------- P R O D U C T     C A R D ----------- */
+/* ----------- P R O D U C T     C A R D ----------- */
+
+.card {
+    background-color:white;
+    width:600px;
+    height:min-content;
+    border-radius:0.5em;
+    box-shadow:0 0 10px 1px rgba(143, 143, 143, 0.13);
+    padding:0;
+    display:flex;
+    /* align-items:center; */
+    /* justify-content:center; */
+}
+
+.product-desktop-img {
+    width:50%;
+    border-radius:0.5em 0 0 0.5em;
+}
+
+/* ---- M O B I L E   I M A G E ------ */
+/* -- N E E D S    T O    B E    H I D D E N   R I G H T     N O W ----- */
+.product-mobile-img {
+content:none;
+width:1px;
+height:1px;
+position:absolute;
+left:-50px;
+top:-50px;
+}
+
+/* ----------- R I G H T    C O L U M N  ----------- */
+/* ----------- R I G H T    C O L U M N  ----------- */
+
+.product-info {
+    position:relative;
+    border-radius:0.5em;
+    height:stretch;
+    padding:6% 6%;
+    /* margin: 0 0%; */
+
+    display:fleX;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+
+.product-info *{
+    display:inline-block;
+    margin:0;
+}
+
+.category{
+    letter-spacing:3px;
+    line-height:100%;
+    }
+
+h1 {
+    font-family: Fraunces, serif;
+    line-height:1em;
+}
+
+p {
+    font-family:Montserrat;
+    font-size:14px;
+    line-height:2em;
+    color:hsl(228, 12%, 48%);
+    
+}
+
+.prices {
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:left;
+}
+
+.price {
+    color:hsl(158, 36%, 37%);
+    margin-right:0.5em;
+}
+
+.old-price {
+    text-decoration:line-through;
+    color:hsl(228, 12%, 48%);
+}
+
+button {
+    width:100%;
+    height:3.4em;
+    background-color:hsl(158, 36%, 37%);
+    border:none;
+    border-radius:0.65em;
+    position:relative;
+
+    font-family:Montserrat, sans-serif;
+    font-weight:bold;
+    text-align:center;
+    text-indent:2em;
+    color:white;
+}
+
+button:hover{
+    background-color:hsl(160, 34%, 17%);
+    cursor:pointer;
+}
+
+.cart-icon {
+    display:inline-block;
+    position:absolute;
+    left:65px;
+}
+
+
+
+@MEDIA (MAX-WIDTH:375PX){
+
+    html {
+    overflow:hidden;
+    height:100vh;
+}
+
+    body {
+        height:100%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+
+/* ----------- P R O D U C T     C A R D ----------- */
+/* ----------- P R O D U C T     C A R D ----------- */
+
+
+.card {
+    background-color:white;
+    box-shadow:0 0 10px 1px rgba(143, 143, 143, 0.13);
+    /* padding:0; */
+    display:flex;
+    border-radius:0.5em;
+
+    width:340px;
+    height:600px;
+    /* height:fit-content; */
+    
+    flex-direction:column;
+    align-items:center;
+    /* object-fit:cover; */
+    /* justify-content:flex-start; */
+}
+
+.product-mobile-img {
+    border-radius:0.5em 0 0 0.5em;
+
+    position:initial;
+    width:100%;
+    height:max-content;
+    /* object-fit:cover; */
+    border-radius:0.5em 0.5em 0 0;
+}
+
+.product-desktop-img {
+    border:1px solid red;
+    content:none;
+    width:1px;
+    height:1px;
+    position:absolute;
+    left:-50px;
+    top:-50px;
+    }
+
+/* ----------- B O T T O M    R O W  ----------- */
+/* ----------- B O T T O M    R O W  ----------- */
+
+.product-info {
+    position:relative;
+    border-radius:0.5em;
+    /* border:1px solid brown; */
+
+    height:600px;
+    padding:0 7%;
+    margin: 1.5em 0%;
+
+    display:fleX;
+    flex-direction:column;
+    /* justify-content:space-between; */
+    
+    align-items:flex-start;
+}
+
+
+.category{
+    letter-spacing:4px;
+    line-height:100%;
+    font-size:0.7em;
+    }
+
+p {
+    font-family:Montserrat;
+    font-size:14px;
+    line-height:1.8em;
+    color:hsl(228, 12%, 48%);
+    
+}
+
+
+
+.cart-icon {
+    /* display:inline-block;
+    position:absolute; */
+    left:92px;
+}
+
+}
